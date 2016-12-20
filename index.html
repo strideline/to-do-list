@@ -5,23 +5,25 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-
-  <form id="myForm">
+  
+  <section class="left-column">
+    <form id="myForm">
    
-    <div id="list-title">
+     <div id="list-title">
       <label>Simple To-Do List</label>
-    </div>
+     </div>
     
-    <div class="text-field">
-      <input id="copy" name="toDo" placeholder="Enter text" type="text" autocomplete="off">
+     <div class="text-field">
+      <input name="toDo" placeholder="Enter text" type="text" autocomplete="off">
     
       <input id= "submit" type="image" src="go_icon.svg">
-    </div>
-  </form>
+     </div>
+    </form>
+  </section>
 
-  <div id="listed-items">
+  <section class="listed-items">
     <ul id="list"></ul>
-  </div>
+  </section>
 
 <script type="text/javascript" src="script.js"></script>
 

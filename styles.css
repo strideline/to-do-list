@@ -5,6 +5,18 @@ body {
 
 }
 
+.left-column {
+  float: left;
+  width: 45%;
+  padding: 10% 0 0 0;
+}
+
+.listed-items {
+  float: right;
+  width: 55%;
+  padding 20% 0 0 5%;
+}
+
 label {
   font-family: 'Helvetica', sans-serif;
   font-weight: bold;
@@ -12,7 +24,7 @@ label {
   width: 60%;
   text-align: center;
   color: white;
-  padding: 60px 0 20px 0;
+  padding: 0 0 20px 0;
 
 }
 
@@ -51,19 +63,26 @@ ul {
   padding: 34px 0 0 10%;
   color: white;
   font-family: 'Droid Serif', serif;
-  list-style: url('empty_box.svg');
+  // list-style: url('empty_box.svg');
   list-style-position: inside;
 }
 
 li:hover {
-  list-style-image: url('filled_box.svg')
+  list-style-image: url('filled_box.svg');
+  cursor: pointer;
+  color: #eeeeee;
 }
 
 li {
+  display: inline-block;
   font-size: 26px;
   text-align: left;
-  // list-style-image: url('empty_box.svg');
-  padding: 0 0 12px 0;
+  list-style-image: url('empty_box.svg');
+  padding: 0 0 12px 10px;
+}
+
+.clearfix {
+  clear: both;
 }
 
 #list-title {
@@ -75,14 +94,21 @@ li {
   text-align: center;
 }
 
+.button {
+  display: inline-block;
+  // color: #DA5D55;
+  background: transparent;
+  border: 0;
+  background-image: url('delete_btn.svg');
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+
 #myForm {
 
 }
 
-#listed-items {
+// #copy {
 
-}
-
-#copy {
-
-}
+// }
