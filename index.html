@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>To Do List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
      </div>
     
      <div class="text-field">
-      <input name="toDo" placeholder="Enter text" type="text" autocomplete="off">
+      <input id="todo-input" name="toDo" placeholder="Thing I should do.." type="text" autocomplete="off">
     
       <input id= "submit" type="image" src="go_icon.svg">
      </div>
@@ -25,7 +26,10 @@
     <ul id="list"></ul>
   </section>
 
-<script type="text/javascript" src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery-script.js"></script>
+
+<!-- <script type="text/javascript" src="script.js"></script> -->
 
 </body>
 </html>

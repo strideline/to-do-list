@@ -19,16 +19,21 @@ myForm.addEventListener('submit', function(e) {
   deleteButton.className = 'button';
   clearDiv.className = 'clearfix';
 
+  listItem.appendChild(deleteButton);
+  listItem.appendChild(clearDiv);
+
+  // toDo.appendChild(listedItems);
+
   deleteButton.addEventListener('click', function(e){
     event.target.parentNode.remove();
   });
 
-  listedItems.appendChild(listItem);
-  listedItems.appendChild(deleteButton);
-  listedItems.appendChild(clearDiv);
+  // listedItems.appendChild(listItem);
+  // listedItems.appendChild(deleteButton);
+  // listedItems.appendChild(clearDiv);
 
   // toDo.appendChild(listedItems);
-
+  listedItems.appendChild(listItem);
   event.target.toDo.value = '';
 });
 

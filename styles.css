@@ -1,20 +1,51 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Open+Sans:400,600');
 
 body {
-  background-color: #DA5D55;
+      background: linear-gradient(to left top, #c473d1, #9973d1) fixed;
+      height: 100%;
 
 }
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #885599;
+}
+::-webkit-input-placeholder { /* Chrome */
+  color: #885599;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #885599;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #885599;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #885599;
+  opacity: 1;
+}
+
 
 .left-column {
   float: left;
   width: 45%;
-  padding: 10% 0 0 0;
+  padding: 10% 0 0 10%;
 }
 
 .listed-items {
   float: right;
   width: 55%;
   padding 20% 0 0 5%;
+}
+
+@media (max-width:768px) {
+  .left-column {
+    width: 100%;
+    float: none;
+  }
+  .listed-items {
+    width: 100%;
+    float: none;
+  }
 }
 
 label {
@@ -35,7 +66,7 @@ input:not([type=image]) {
   font-family: 'Droid Serif', serif;
   font-weight: 400;
   color: white;
-  width: 250px;
+  width: 80%;
   height: 50px;
   font-size: 24px;
   line-height: 1.5rem;
@@ -48,7 +79,7 @@ input:focus {
 
 input[type=image] {
   display: inline-block;
-  width: 60px;
+  width: 15%;
   border: none;
   background: transparent;
   background-repeat: no-repeat;
@@ -74,7 +105,7 @@ li:hover {
 }
 
 li {
-  display: inline-block;
+  display: block;
   font-size: 26px;
   text-align: left;
   list-style-image: url('empty_box.svg');
@@ -95,7 +126,7 @@ li {
 }
 
 .button {
-  display: inline-block;
+  display: block;
   // color: #DA5D55;
   background: transparent;
   border: 0;
@@ -103,6 +134,10 @@ li {
   float: right;
   width: 20px;
   height: 20px;
+}
+
+.button:hover{
+  cursor: pointer;
 }
 
 #myForm {
